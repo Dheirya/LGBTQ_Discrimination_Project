@@ -57,7 +57,7 @@
          })
          swalWithBootstrapButtons.fire({
            title: 'Start LGBTQ+ Game',
-           text: "To play use the Arrow keys to move around the guy. Dodge the government people, and survive long enough to get people following your petition!",
+           text: "To play use the Arrow keys or WASD keys to move around the guy. Dodge the government people, and survive long enough to get people following your petition!",
            icon: 'info',
            showCancelButton: false,
            confirmButtonText: 'Ok, I want to change laws!',
@@ -208,7 +208,15 @@
              myGamePiece.speedX = -1;
              myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
            }
+            if (myGameArea.keys && myGameArea.keys[65]) {
+            myGamePiece.speedX = -1;
+             myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
+           }
            if (myGameArea.keys && myGameArea.keys[39]) {
+             myGamePiece.speedX = 1;
+             myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
+           }
+           if (myGameArea.keys && myGameArea.keys[68]) {
              myGamePiece.speedX = 1;
              myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
            }
@@ -216,7 +224,15 @@
              myGamePiece.speedY = -1;
              myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
            }
+           if (myGameArea.keys && myGameArea.keys[87]) {
+             myGamePiece.speedY = -1;
+             myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
+           }
            if (myGameArea.keys && myGameArea.keys[40]) {
+             myGamePiece.speedY = 1;
+             myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
+           }
+           if (myGameArea.keys && myGameArea.keys[83]) {
              myGamePiece.speedY = 1;
              myGamePiece.image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3Vx0jusBoFvqywVR64-Z7oxz6_oX1CwDw&usqp=CAU";
            }
