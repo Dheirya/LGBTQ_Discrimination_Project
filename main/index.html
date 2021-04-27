@@ -191,7 +191,8 @@
                </div>
             </footer>
          </section>
-         <button class="open-button" onclick="openForm()"><img src="https://static.thenounproject.com/png/1045275-200.png" height="40px" width="40px"></button>
+      </main>
+      <button class="position-fixed open-button" onclick="openForm()"><img src="https://static.thenounproject.com/png/1045275-200.png" height="40px" width="40px" class="position-fixed"></button>
         <div class="chat-popup" id="myForm" style="width:300px;">
           <form action="/action_page.php" class="form-container">
             <center>
@@ -206,7 +207,6 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>
         </div>
-      </main>
       <script>
          function openForm() {
             document.getElementById("myForm").style.display = "block";
