@@ -54,7 +54,7 @@
                </div>
             </nav>
          </section>
-         <section class="static static-seven">
+         <section class="static static-seven" id="quote">
             <div class="container-fluid bg-7 text-center" style="height: 100vh;">
                 <div id="quote-start" style="z-index:1100;"><h1><mark><i>"Insert Quote Here" -- Someone</i></mark></h1></div><br><br><br>
                	<div class="cloud x1"></div>
@@ -70,7 +70,7 @@
             </div>
          </section>
          <section class="section parallax parallax-five"><mark><h4>Story</h4></mark></section>
-         <section class="static static-one">
+         <section class="static static-one" id="intro">
             <div class="container-fluid bg-1 text-center">
                <h3 class="margin"><mark>Title</mark></h3>
                <br />
@@ -214,7 +214,7 @@
          function closeForm() {
            document.getElementById("myForm").style.display = "none";
          }
-         window.location.href.indexOf("#") > -1 && history.pushState("", document.title, window.location.pathname + window.location.search);
+         window.location.href.indexOf("#section") > -1 && history.pushState("", document.title, window.location.pathname + window.location.search);
          document.querySelector("#doc-year").innerText = new Date().getFullYear();
          var title = new MovingTitle("LGBTQ+ Discrimination in The Workplace Presentation | Made By: Person, Person, Person, Person | Share with others, together we will be heard! | ", 300, 50);
          title.init();
