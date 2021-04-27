@@ -191,8 +191,29 @@
                </div>
             </footer>
          </section>
+         <button class="open-button" onclick="openForm()"><img src="https://static.thenounproject.com/png/1045275-200.png" height="40px" width="40px"></button>
+        <div class="chat-popup" id="myForm" style="width:300px;">
+          <form action="/action_page.php" class="form-container">
+            <center>
+            <h1 style="color:#000">Vocab</h1>
+            <p style="color:gray">
+            Words - Definition <br>
+            Words - Definition <br>
+            Words - Definition <br>
+            Words - Definition <br>
+            </p>
+            </center>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
       </main>
       <script>
+         function openForm() {
+            document.getElementById("myForm").style.display = "block";
+         }
+         function closeForm() {
+           document.getElementById("myForm").style.display = "none";
+         }
          window.location.href.indexOf("#") > -1 && history.pushState("", document.title, window.location.pathname + window.location.search);
          document.querySelector("#doc-year").innerText = new Date().getFullYear();
          var title = new MovingTitle("LGBTQ+ Discrimination in The Workplace Presentation | Made By: Person, Person, Person, Person | Share with others, together we will be heard! | ", 300, 50);
