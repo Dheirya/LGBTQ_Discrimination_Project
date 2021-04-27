@@ -38,7 +38,7 @@
          <section class="static static-zero">
             <nav class="navbar navbar-default">
                <div class="container">
-                  <div class="navbar-header shake-1000"><a class="navbar-brand rainbow" href="#">LGBTQ+ Presentation</a></div>
+                  <div class="navbar-header move_it"><a class="navbar-brand rainbow" href="#">LGBTQ+ Presentation</a></div>
                </div>
             </nav>
          </section>
@@ -182,7 +182,10 @@
       </main>
       <script>
          window.location.href.indexOf("#") > -1 && history.pushState("", document.title, window.location.pathname + window.location.search);
+         console.log("Page Loaded Successfully. Styling and Animations are Successful. Images Rendered Successfully.");
          document.querySelector("#doc-year").innerText = new Date().getFullYear();
+      </script>
+      <script>
          var title = new MovingTitle("LGBTQ+ Discrimination in The Workplace Presentation | Made By: Person, Person, Person, Person | Share with others, together we will be heard! | ", 300, 50);
          title.init();
          blur = false;
@@ -222,7 +225,6 @@
             };
             return _instance;
          }
-         console.log("Page Loaded Successfully. Styling and Animations are Successful. Images Rendered Successfully.");
       </script>
    </body>
 </html>
