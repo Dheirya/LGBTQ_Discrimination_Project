@@ -304,6 +304,7 @@
          title.init();
          }
          blur = false;
+         if (window.location.href.indexOf("presentation") > -1){}else{
          $(window).blur(function() {
              document.title = "We Miss You";
              blur = true;
@@ -311,6 +312,7 @@
          $(window).focus(function() {
              blur = false;
          });
+         }
          function MovingTitle(writeText, interval, visibleLetters) {
              var _instance = {};
              var _currId = 0;
