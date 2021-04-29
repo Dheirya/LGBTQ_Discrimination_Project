@@ -300,7 +300,9 @@
          window.location.href.indexOf("#section") > -1 && history.pushState("", document.title, window.location.pathname + window.location.search);
          document.querySelector("#doc-year").innerText = new Date().getFullYear();
          var title = new MovingTitle("LGBTQ+ Discrimination in The Workplace Presentation | Made By: Emma, Neve, Clare, Dheirya, Jack, Taylor, Isabella | Share with others, together we will be heard! | ", 150, 50);
+         if (window.location.href.indexOf("presentation") > -1){}else{
          title.init();
+         }
          blur = false;
          $(window).blur(function() {
              document.title = "We Miss You";
